@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Work — Yashal Hussain</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231D3557'/%3E%3Ctext x='32' y='42' font-family='sans-serif' font-weight='700' font-size='30' fill='%23FAFAF8' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="logo-mark">YH</span>
+      <span class="logo-word">Yashal Hussain</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="work.html" class="active">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="nav-cta">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="eyebrow">Work</div>
+    <h1 class="page-title">Five real projects</h1>
+    <p class="lede">Every case below shows the actual problem, what I decided, and what came of it, including the parts that didn't work the first time.</p>
+
+    <div style="height:40px;"></div>
+
+    <div class="case-card">
+      <img src="images/work_loandefault.png" alt="Loan default cost optimization notebook output">
+      <div class="case-body">
+        <span class="case-tag">CodeAlpha Internship</span>
+        <h2 class="case-title">Loan Default Risk with Business Cost Optimization</h2>
+        <p><strong>The problem.</strong> Predicting loan default on the Home Credit dataset isn't just a classification exercise, a missed default costs far more than a good loan wrongly declined. A model tuned for accuracy alone ignores that asymmetry.</p>
+        <p><strong>What I did.</strong> Trained a CatBoost model under memory constraints, then optimized the decision threshold against the actual cost of false negatives versus false positives, instead of stopping at the default 0.5 cutoff.</p>
+        <p><strong>What came of it.</strong> A threshold chosen for business cost, not textbook default: 35% lower total cost than the 0.5 cutoff.</p>
+        <div class="case-cta"><a class="btn-outline" href="contact.html">Ask about this project &rarr;</a></div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <img src="images/work_flyrank.png" alt="FlyRank notebook showing rule vs base rate precision at 50">
+      <div class="case-body">
+        <span class="case-tag">FlyRank ML Internship</span>
+        <h2 class="case-title">Refresh Opportunity Scoring</h2>
+        <p><strong>The problem.</strong> FlyRank had 30,000 live content pages across 32 clients and no reliable way to tell which ones needed attention, when an editor can only review about 50 a week.</p>
+        <p><strong>What I did.</strong> Checked signal strength across four possible framings before touching a model, then tested the rule an editor would actually write by hand: flag old pages ranking poorly.</p>
+        <p><strong>What came of it.</strong> The rule scored 0.540 precision at 50, statistically the same as the 0.542 base rate. That result, not a hunch, is what justified moving to a model.</p>
+        <div class="case-cta"><a class="btn-outline" href="contact.html">Ask about this project &rarr;</a></div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <img src="images/work_termdeposit.png" alt="Term deposit model training output showing F1 and ROC-AUC">
+      <div class="case-body">
+        <span class="case-tag">CodeAlpha Internship</span>
+        <h2 class="case-title">Term Deposit Subscription Prediction</h2>
+        <p><strong>The problem.</strong> A bank wanted to know which customers contacted in a marketing campaign were actually likely to subscribe, so calls could be prioritized instead of made blind.</p>
+        <p><strong>What I did.</strong> Compared several models rather than defaulting to one, and judged the winner on F1 and ROC-AUC together, not accuracy, since subscribers were a minority class.</p>
+        <p><strong>What came of it.</strong> F1 of 0.86 and ROC-AUC of 0.93 on held-out data, a model that actually separates likely subscribers from unlikely ones.</p>
+        <div class="case-cta"><a class="btn-outline" href="contact.html">Ask about this project &rarr;</a></div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <img src="images/work_pca.png" alt="Customer segmentation clusters visualized via PCA">
+      <div class="case-body">
+        <span class="case-tag">CodeAlpha Internship</span>
+        <h2 class="case-title">Customer Segmentation</h2>
+        <p><strong>The problem.</strong> The Mall Customers dataset has no labels for what "types" of customers exist, someone has to decide how many segments actually make sense and defend that number.</p>
+        <p><strong>What I did.</strong> Ran K-Means across a range of cluster counts and used the silhouette score to pick K, rather than eyeballing a chart.</p>
+        <p><strong>What came of it.</strong> Five segments with a silhouette score around 0.55, distinct enough for a marketing team to target differently instead of treating every customer the same.</p>
+        <div class="case-cta"><a class="btn-outline" href="contact.html">Ask about this project &rarr;</a></div>
+      </div>
+    </div>
+
+    <div class="case-card">
+      <img src="images/work_dashboard.png" alt="Codiora BI dashboard overview">
+      <div class="case-body">
+        <span class="case-tag">Codiora Software House Internship</span>
+        <h2 class="case-title">Five-Week BI Dashboard Build</h2>
+        <p><strong>The problem.</strong> The same underlying questions needed to work for three different audiences, from a business-friendly BI tool to something that could run as a standalone web app.</p>
+        <p><strong>What I did.</strong> Built the same 25-project dataset three times on purpose: Power BI for the first three weeks, then Dash, then Streamlit, to compare what each tool made easy versus painful.</p>
+        <p><strong>What came of it.</strong> A working dashboard in three stacks, and a clear sense of which tool fits which audience.</p>
+        <div class="case-cta"><a class="btn-outline" href="contact.html">Ask about this project &rarr;</a></div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    Yashal Hussain — MS Data Science, PUCIT — <a href="contact.html">Book a call</a>
+  </div>
+</footer>
+
+</body>
+</html>
